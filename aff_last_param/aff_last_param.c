@@ -17,9 +17,15 @@ void	ft_putstr(char *str)
 	}
 }
 
-int	main(void)
+int	main(int argc, char **argv)
 {
-	ft_putstr("zYxWvUtSrQpOnMlKjIhGfEdCbA");
-	ft_putchar('\n');
+	if (argc < 2)
+	{
+		ft_putchar('\n');
+		return (0);
+	}
+	ft_putstr(argv[argc - 1]);
+	
+ft_putchar('\n');
 	return (0);
 }
